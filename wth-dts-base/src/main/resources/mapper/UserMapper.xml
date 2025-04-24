@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="wth.dts.dao.UserDao">
+
+    <resultMap id="AllColumnMap" type="wth.dts.entity.User">
+        <result column="id" property="id"/>
+        <result column="type" property="type"/>
+        <result column="enabled" property="enabled"/>
+        <result column="open_id" property="openId"/>
+        <result column="phone" property="phone"/>
+        <result column="create_time" property="createTime"/>
+    </resultMap>
+
+    <sql id="all_column">
+        `id`,
+        `type`,
+        `enabled`,
+        `open_id`,
+        `phone`,
+        `create_time`
+    </sql>
+
+    <select id="getById" resultMap="AllColumnMap">
+        select
+        <include refid="all_column"/>
+        from `user`
+        where `id` = #{id}
+    </select>
+
+    <select id="getByOpenId" resultMap="AllColumnMap">
+        select
+        <include refid="all_column"/>
+        from `user`
+        where `open_id` = #{openId}
+    </select>
+
+    <insert id="insert">
+        INSERT INTO `user`
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="pojo.id != null">`id`,</if>
+            <if test="pojo.type != null">`type`,</if>
+            <if test="pojo.enabled != null">`enabled`,</if>
+            <if test="pojo.openId != null">`open_id`,</if>
+            <if test="pojo.phone != null">`phone`,</if>
+            <if test="pojo.createTime != null">`create_time`,</if>
+        </trim>
+        VALUES
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="pojo.id != null">#{pojo.id},</if>
+            <if test="pojo.type != null">#{pojo.type},</if>
+            <if test="pojo.enabled != null">#{pojo.enabled},</if>
+            <if test="pojo.openId != null">#{pojo.openId},</if>
+            <if test="pojo.phone != null">#{pojo.phone},</if>
+            <if test="pojo.createTime != null">#{pojo.createTime},</if>
+        </trim>
+        ON DUPLICATE KEY UPDATE `open_id` = VALUES(`open_id`)
+    </insert>
+
+    <update id="update">
+        UPDATE `user`
+        <set>
+            <if test="pojo.id != null">`id` = #{pojo.id},</if>
+            <if test="pojo.enabled != null">`enabled` = #{pojo.enabled},</if>
+            <if test="pojo.openId != null">`open_id`= #{pojo.openId},</if>
+            <if test="pojo.phone != null">`phone` = #{pojo.phone},</if>
+        </set>
+        WHERE `id` = #{pojo.id}
+    </update>
+
+    <select id="getList" resultMap="AllColumnMap">
+        SELECT
+        <include refid="all_column"/>
+        FROM `user`
+        <where>
+            <if test="pojo.phone != null">
+                AND `phone` = #{pojo.phone}
+            </if>
+        </where>
+    </select>
+
+    <select id="getListByIdList" resultMap="AllColumnMap">
+        SELECT
+        <include refid="all_column"/>
+        FROM `user`
+        WHERE `id` IN
+        <foreach collection="idList" item="item" open="(" separator="," close=")">
+            #{item}
+        </foreach>
+    </select>
+
+    <select id="getByTypeAndPhone" resultMap="AllColumnMap">
+        SELECT
+        <include refid="all_column"/>
+        FROM `user`
+        WHERE `type` = #{type} AND `phone` = #{phone}
+        ORDER BY `id` desc
+        limit 1
+    </select>
+    <select id="getListByPhoneList" resultMap="AllColumnMap">
+        SELECT
+        <include refid="all_column"/>
+        FROM `user`
+        WHERE `phone` IN
+        <foreach collection="phoneList" item="item" open="(" separator="," close=")">
+            #{item}
+        </foreach>
+    </select>
+    <select id="getListByPhoneListAndType" resultMap="AllColumnMap">
+        SELECT
+        <include refid="all_column"/>
+        FROM `user`
+        WHERE `phone` IN
+        <foreach collection="phoneList" item="item" open="(" separator="," close=")">
+            #{item}
+        </foreach>
+        AND `type` = #{type}
+    </select>
+
+    <select id="getTestList" resultMap="AllColumnMap">
+        SELECT
+        <include refid="all_column"/>
+        FROM `user`
+        <where>
+            <if test="pojo.id != null">
+                AND `id` = #{pojo.id}
+            </if>
+            <if test="pojo.type != null">
+                AND `type` = #{pojo.type}
+            </if>
+            <if test="startTime != null">
+                AND `create_time` &gt;= #{startTime}
+            </if>
+            <if test="endTime != null">
+                AND `create_time` &lt;= #{endTime}
+            </if>
+        </where>
+    </select>
+    <select id="getListByOpenIdList" resultMap="AllColumnMap">
+        SELECT
+        <include refid="all_column"/>
+        FROM `user`
+        WHERE `open_id` IN
+        <foreach collection="openIdList" item="item" open="(" separator="," close=")">
+            #{item}
+        </foreach>
+    </select>
+</mapper>

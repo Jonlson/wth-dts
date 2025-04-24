@@ -1,0 +1,79 @@
+2025-04-24 09:31:00.644 [main] INFO  com.alibaba.nacos.client.env.SearchableProperties - properties search order:PROPERTIES->JVM->ENV->DEFAULT_SETTING
+2025-04-24 09:31:02.162 [main] INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2025-04-24 09:31:02.163 [main] INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2025-04-24 09:31:11.392 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-simple-kafka-comsumer-prod.properties,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-simple-kafka-comsumer.properties,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-simple-kafka-comsumer,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-spring-kafka.yaml,DEFAULT_GROUP'}]
+2025-04-24 09:31:11.404 [main] INFO  wth.dts.WthDtsTemplateApplication - The following 1 profile is active: "prod"
+2025-04-24 09:31:11.874 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2025-04-24 09:31:11.901 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 0 Elasticsearch repository interfaces.
+2025-04-24 09:31:11.908 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2025-04-24 09:31:11.911 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2025-04-24 09:31:12.177 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=8eaed8a5-0d77-3abe-a2fd-1bcac360b503
+2025-04-24 09:31:12.315 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2025-04-24 09:38:09.096 [main] INFO  com.alibaba.nacos.client.env.SearchableProperties - properties search order:PROPERTIES->JVM->ENV->DEFAULT_SETTING
+2025-04-24 09:38:10.453 [main] INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2025-04-24 09:38:10.453 [main] INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2025-04-24 09:38:19.547 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-simple-kafka-comsumer-prod.properties,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-simple-kafka-comsumer.properties,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-simple-kafka-comsumer,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-spring-kafka.yaml,DEFAULT_GROUP'}]
+2025-04-24 09:38:19.554 [main] INFO  wth.dts.WthDtsTemplateApplication - The following 1 profile is active: "prod"
+2025-04-24 09:38:19.825 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2025-04-24 09:38:19.838 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Elasticsearch repository interfaces.
+2025-04-24 09:38:19.842 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2025-04-24 09:38:19.845 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2025-04-24 09:38:19.973 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=8eaed8a5-0d77-3abe-a2fd-1bcac360b503
+2025-04-24 09:38:20.043 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2025-04-24 09:42:00.592 [main] INFO  com.alibaba.nacos.client.env.SearchableProperties - properties search order:PROPERTIES->JVM->ENV->DEFAULT_SETTING
+2025-04-24 09:42:01.865 [main] INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2025-04-24 09:42:01.866 [main] INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2025-04-24 09:42:11.216 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-simple-kafka-comsumer-prod.properties,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-simple-kafka-comsumer.properties,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-simple-kafka-comsumer,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-spring-kafka.yaml,DEFAULT_GROUP'}]
+2025-04-24 09:42:11.225 [main] INFO  wth.dts.WthDtsTemplateApplication - The following 1 profile is active: "prod"
+2025-04-24 09:42:11.495 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2025-04-24 09:42:11.509 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 Elasticsearch repository interfaces.
+2025-04-24 09:42:11.512 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2025-04-24 09:42:11.514 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2025-04-24 09:42:11.637 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=8eaed8a5-0d77-3abe-a2fd-1bcac360b503
+2025-04-24 09:42:11.708 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2025-04-24 09:42:26.554 [main] INFO  com.alibaba.nacos.client.env.SearchableProperties - properties search order:PROPERTIES->JVM->ENV->DEFAULT_SETTING
+2025-04-24 09:42:31.579 [main] INFO  com.alibaba.nacos.client.env.SearchableProperties - properties search order:PROPERTIES->JVM->ENV->DEFAULT_SETTING
+2025-04-24 09:42:33.029 [main] INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2025-04-24 09:42:33.029 [main] INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2025-04-24 09:42:42.438 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-simple-kafka-comsumer-prod.properties,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-simple-kafka-comsumer.properties,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-simple-kafka-comsumer,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-spring-kafka.yaml,DEFAULT_GROUP'}]
+2025-04-24 09:42:42.447 [main] INFO  wth.dts.WthDtsTemplateApplication - The following 1 profile is active: "prod"
+2025-04-24 09:42:42.768 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2025-04-24 09:42:42.780 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Elasticsearch repository interfaces.
+2025-04-24 09:42:42.784 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2025-04-24 09:42:42.787 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2025-04-24 09:42:42.938 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=c443bca8-f77f-36b6-986b-297c725352de
+2025-04-24 09:42:43.033 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2025-04-24 09:43:40.913 [main] INFO  com.alibaba.nacos.client.env.SearchableProperties - properties search order:PROPERTIES->JVM->ENV->DEFAULT_SETTING
+2025-04-24 09:43:42.080 [main] INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2025-04-24 09:43:42.080 [main] INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2025-04-24 09:43:51.192 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-simple-kafka-comsumer-prod.properties,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-simple-kafka-comsumer.properties,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-simple-kafka-comsumer,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-spring-kafka.yaml,DEFAULT_GROUP'}]
+2025-04-24 09:43:51.199 [main] INFO  wth.dts.WthDtsTemplateApplication - The following 1 profile is active: "prod"
+2025-04-24 09:43:51.462 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2025-04-24 09:43:51.474 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Elasticsearch repository interfaces.
+2025-04-24 09:43:51.476 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2025-04-24 09:43:51.479 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2025-04-24 09:43:51.600 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=63b8fe50-7a07-3a24-ae63-faefcbb6cb61
+2025-04-24 09:43:51.669 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2025-04-24 09:45:38.989 [main] INFO  com.alibaba.nacos.client.env.SearchableProperties - properties search order:PROPERTIES->JVM->ENV->DEFAULT_SETTING
+2025-04-24 09:45:40.197 [main] INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2025-04-24 09:45:40.198 [main] INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2025-04-24 09:45:49.310 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-simple-kafka-comsumer-prod.properties,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-simple-kafka-comsumer.properties,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-simple-kafka-comsumer,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-spring-kafka.yaml,DEFAULT_GROUP'}]
+2025-04-24 09:45:49.318 [main] INFO  wth.dts.WthDtsTemplateApplication - The following 1 profile is active: "prod"
+2025-04-24 09:45:49.587 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2025-04-24 09:45:49.599 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Elasticsearch repository interfaces.
+2025-04-24 09:45:49.602 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2025-04-24 09:45:49.604 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2025-04-24 09:45:49.729 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=04a01154-fcbe-377d-bba1-a9797887fac4
+2025-04-24 09:45:49.829 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.

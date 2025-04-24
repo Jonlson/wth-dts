@@ -31,6 +31,7 @@
         <disruptor.version>3.4.2</disruptor.version>
 
         <dts-new-subscribe-sdk.version>2.1.4</dts-new-subscribe-sdk.version>
+        <pagehelper-spring-boot-starter.version>1.4.1</pagehelper-spring-boot-starter.version>
 
         <mysql-connector.version>8.0.28</mysql-connector.version>
         <druid.version>1.2.11</druid.version>
@@ -62,6 +63,11 @@
                 <scope>import</scope>
             </dependency>
 
+            <dependency>
+                <groupId>com.github.pagehelper</groupId>
+                <artifactId>pagehelper-spring-boot-starter</artifactId>
+                <version>${pagehelper-spring-boot-starter.version}</version>
+            </dependency>
             <dependency>
                 <groupId>com.alibaba</groupId>
                 <artifactId>fastjson</artifactId>

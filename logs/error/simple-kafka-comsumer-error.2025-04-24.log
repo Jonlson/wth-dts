@@ -1,0 +1,94 @@
+2025-04-24 09:31:12.361 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'wth.dts.business.BizEsDocUserService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'wth.dts.business.BizEsDocUserService' in your configuration.
+
+2025-04-24 09:38:20.064 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'wth.dts.business.BizEsDocUserService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'wth.dts.business.BizEsDocUserService' in your configuration.
+
+2025-04-24 09:42:11.728 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'wth.dts.business.BizEsDocUserService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'wth.dts.business.BizEsDocUserService' in your configuration.
+
+2025-04-24 09:42:43.062 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'wth.dts.service.UserService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'wth.dts.service.UserService' in your configuration.
+
+2025-04-24 09:43:51.690 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'wth.dts.dao.UserDao' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'wth.dts.dao.UserDao' in your configuration.
+
+2025-04-24 09:45:49.875 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (the profiles prod are currently active).
+

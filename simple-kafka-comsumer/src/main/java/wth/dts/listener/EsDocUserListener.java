@@ -30,9 +30,9 @@ public class EsDocUserListener {
 
     @Resource
     private KafkaTemplate<String, String> kafkaTemplate;
+    private final String TOPIC = "es-doc-user";
 
-
-    @KafkaListener(topics = "es-doc-user")
+    @KafkaListener(topics = TOPIC)
     public void execute(ConsumerRecord<?, ?> record, Acknowledgment ack ) {
         StringBuilder sb = new StringBuilder("\n");
         sb.append("topic: ").append(record.topic()).append("\n");
@@ -41,7 +41,7 @@ public class EsDocUserListener {
 
         log.info(sb.toString());
 
-        bizEsDocUserService.execute(record.key().toString(), record.value().toString());
+        bizEsDocUserService.execute((String) record.key(), (String) record.value());
 
         ack.acknowledge();
 
@@ -70,15 +70,20 @@ public class EsDocUserListener {
                         consumer.commitAsync((offsets, exception) -> {
                             if (exception != null) {
                                 System.err.println("异步提交失败：" + exception.getMessage());
-                            } else {
-//                            System.out.println("异步提交成功：" + offsets);
-                                // 重新消费：
                                 kafkaTemplate.send("user-topic", record.key(), JSON.toJSONString(record));
+                            } else {
+//                            log.error("异步提交成功：" + offsets);
                             }
                         });
                         // 处理逻辑
                         System.out.printf("收到消息: %s => %s%n", record.key(), record.value());
-                        bizEsDocUserService.execute(record.key(), record.value());
+                        try {
+                            bizEsDocUserService.execute(record.key(), record.value());
+                            kafkaTemplate.send("user-topic", record.key(), JSON.toJSONString(record));
+                        } catch (Exception e) {
+                            log.error("处理失败：{}", e.getMessage(), e);
+                            kafkaTemplate.send("user-topic", record.key(), JSON.toJSONString(record));
+                        }
                     }
 
 
